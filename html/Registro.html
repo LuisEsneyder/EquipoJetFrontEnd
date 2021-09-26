@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Finanzas Mi Hogar</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../css/cover.css">
+    <link href="../css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark justify-content-center" >
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div class="div-navar">
+            
+            <h3 class="float-md-start nav nav-masthead justify-content-center"><a class="nav-link" href="inicioSesion.html">Finanzas Mi Hogar</a></h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link active" href="inicioSesion.html"></a>
+            </nav>
+          </div>
+        </header>
+        
+        <div class="cover-container d-flex w-1 h-100 p-2 flex-column bg-gradient">
+            <div class="col-md-12 col-md-9">
+                <h4 class="mb-md-8 " >Registro Finanzas Mi Hogar</h4>
+                <!-- Mensajes de Verificación -->
+                <div id="error" class="alert alert-danger ocultar" role="alert">
+                  Las Contraseñas no coinciden, vuelve a intentar !
+             </div>
+                <form class="needs-validation justify-content-center" onsubmit="verificarContraseña(); return false" novalidate>
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+            
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+            
+                    <div class="col-md-12">
+                      <label for="email" class="form-label">Email
+                      <input type="email" class="form-control " id="email" placeholder="you@example.com" required>
+                      <div class="invalid-feedback">
+                        Valid email is required.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="password1" class="form-label">Contraseña
+                      <input type="password" class="form-control " id="password1" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Valid Contraseña is required.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="password2" class="form-label">Confirmar Contraseña
+                      <input type="password" class="form-control " id="password2" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Valid Contraseña is required.
+                      </div>
+                    </div>
+            
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">Ciudad</label>
+                      <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Montería</option>
+                        <option >Bogota</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid Ciudad.
+                      </div>
+                    </div>
+                    <div id="msg"></div>
+ 
+                    
+                    <button class="btn btn-lg btn-secondary fw-bold  " type="submit">Registrar</button>
+            
+        </div>
+        
+      
+
+</div>
+
+    <script src="../js/form-validation.js"></script>
+    
+  </body>
+</html>
